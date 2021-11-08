@@ -18,12 +18,11 @@ def hist(fonte):
         bits = 2 ** int(str(fonte[0].dtype)[4:])
         for i in range(bits):
             alfabeto[i] = 0
-        print("Hello World!")
 
     for i in fonte:  # Registar uma ocorrência (i é a chave)
         alfabeto[i] += 1
 
-    #print(alfabeto)
+    print(alfabeto)
 
     plt.bar(alfabeto.keys(), alfabeto.values())
     plt.show()
