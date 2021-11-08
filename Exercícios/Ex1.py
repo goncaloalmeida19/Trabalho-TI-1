@@ -22,7 +22,7 @@ def hist(fonte):
     for i in fonte:  # Registar uma ocorrência (i é a chave)
         alfabeto[i] += 1
 
-    print(alfabeto)
+    #print(alfabeto)
 
     plt.bar(alfabeto.keys(), alfabeto.values())
     plt.show()
