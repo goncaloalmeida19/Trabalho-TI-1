@@ -22,11 +22,11 @@ def hist(fonte):
     for i in fonte:  # Registar uma ocorrência (i é a chave)
         alfabeto[i] += 1
 
-    #print(alfabeto)
+    print(alfabeto)
 
     plt.bar(alfabeto.keys(), alfabeto.values())
     plt.show()
 
-# Testes
-# hist(np.array([1, 2, 3, 4, 5, 6, 8, 8, 2, 1, 3, 3, 5, 7, 8, 9], dtype=np.uint8))
-# hist("jaidjsdiajdiadjasdi")
+
+hist(np.array([1, 2, 3, 4, 5, 6, 8, 8, 2, 1, 3, 3, 5, 7, 8, 9], dtype=np.uint8))
+hist("jaidjsdiajdiadjasdi")
