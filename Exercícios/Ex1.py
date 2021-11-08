@@ -1,10 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-print("isto foi alterado")
-
-
-print(7)
 
 def hist(fonte):
     # Dicionário alfabeto irá conter as ocorrências de cada
