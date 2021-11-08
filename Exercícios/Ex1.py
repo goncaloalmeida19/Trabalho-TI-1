@@ -27,6 +27,6 @@ def hist(fonte):
     plt.bar(alfabeto.keys(), alfabeto.values())
     plt.show()
 
-
-hist(np.array([1, 2, 3, 4, 5, 6, 8, 8, 2, 1, 3, 3, 5, 7, 8, 9], dtype=np.uint8))
-hist("jaidjsdiajdiadjasdi")
+# Testes
+# hist(np.array([1, 2, 3, 4, 5, 6, 8, 8, 2, 1, 3, 3, 5, 7, 8, 9], dtype=np.uint8))
+# hist("jaidjsdiajdiadjasdi")
