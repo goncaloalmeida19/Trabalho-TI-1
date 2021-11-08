@@ -19,4 +19,4 @@ def agrupa(f):
     list = []
     for i in range(int(len(f) / 2 - 1)):
         list.append((f[i * 2], f[i * 2 + 1]))
-return list
+    return list
