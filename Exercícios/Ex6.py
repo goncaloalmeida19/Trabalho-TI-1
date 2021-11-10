@@ -30,9 +30,10 @@ def informacao_mutua(target, query, step):
     p_query = prob(query)
     info = []
     for i in range(0, len(target)-len(query)+1, step):
-        p_target = prob(target[i:i+len(query)])
+        # Tabela de probabilidades de uma secção do target
+        p_target = prob(target[i:i + len(query)])
 
-        # Obter a interseção da query com a parte to target a testar
+        # Obter a interseção da query com a secção to target a testar
         intersecao = [(query[j], target[j + i]) for j in range(len(query))]
         p_intersecao = prob(intersecao)
 
