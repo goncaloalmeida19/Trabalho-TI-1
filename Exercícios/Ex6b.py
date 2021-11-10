@@ -54,5 +54,6 @@ for i in target_files:
     target = list(wavfile.read(i)[1])
     info = informacao_mutua(target, query, round(len(query)/4))
     plt.plot(info)
+    plt.title(i[10:])
     plt.show()
     print_info_mutua(info, i[10:])

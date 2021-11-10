@@ -54,6 +54,7 @@ infos = [informacao_mutua(song, query, round(len(query)/4)) for song in songs]
 for i in range(len(infos)):
     print("Song0"+str(i + 1)+":")
     plt.plot(infos[i])
+    plt.title("Song0" + str(i + 1) + ".wav")
     plt.show()
     print_info_mutua(infos[i])
 print()
