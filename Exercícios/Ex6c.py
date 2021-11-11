@@ -2,6 +2,7 @@ import numpy as np
 from scipy.io import wavfile
 import matplotlib.pyplot as plt
 
+
 # Função que passada uma tabela de probabilidades devolve a entropia
 def entropia(p):
     p = p[p != 0]
