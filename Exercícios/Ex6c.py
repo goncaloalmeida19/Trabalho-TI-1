@@ -14,7 +14,7 @@ def prob(t):
     ocorr = {}
     for i in t:
         if i not in ocorr:
-            ocorr[i] = 0
+            ocorr[i] = 1
         else:
             ocorr[i] += 1
     ocorr = np.array(list(ocorr.values()))
