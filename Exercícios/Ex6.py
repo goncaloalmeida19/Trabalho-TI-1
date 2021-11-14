@@ -37,8 +37,8 @@ def informacao_mutua(target, query, step):
         intersecao = [(query[j], target[j + i]) for j in range(len(query))]
         p_intersecao = prob(intersecao)
 
-        ent_target_query_cond = entropia(p_intersecao) - entropia(p_query)  # H(Y|X) = H(X,Y) - H(Y)
-        info.append(entropia(p_target) - ent_target_query_cond)  # I(X,Y) = H(X) -  H(Y|X)
+        ent_target_query_cond = entropia(p_intersecao) - entropia(p_query)  # H(X|Y) = H(X,Y) - H(Y)
+        info.append(entropia(p_target) - ent_target_query_cond)  # I(X,Y) = H(X) -  H(X|Y)
     return info
 
 
