@@ -42,7 +42,7 @@ def entropia(p):
     return -sum(p*np.log2(p))
 
 
-# Função que devolve a comressão máxima de um alfabeto
+# Função que devolve a compressão máxima de um alfabeto
 # Entropia máxima = log2(tamanho do alfabeto)
 # Compressão (%) = (Entropia máxima - Entropia) / (Entropia máxima) * 100
 def comp_max(alf, ent):
