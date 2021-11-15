@@ -17,8 +17,8 @@ def prob(t):
             ocorr[i] = 1
         else:
             ocorr[i] += 1
+            
     ocorr = np.array(list(ocorr.values()))
-
     return ocorr / sum(ocorr)
 
 
